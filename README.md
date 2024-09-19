@@ -27,12 +27,7 @@ A custom Chatbot using OpenAI embeds and chat to allow you to chat with your doc
    ```bash
    pip install -r requirements.txt
    ```
-
-3. Run the Backend Server
-   ```bash
-   uvicorn main:app --reload
-   ```
-
+3. Create a backend/documents folder and copy your files into that folder
 
 
 ### Frontend Setup
@@ -48,14 +43,29 @@ A custom Chatbot using OpenAI embeds and chat to allow you to chat with your doc
 ## Running the Project
 
 ### Backend
+
+Make sure you are in your (venv) source in your terminal, if not, run 
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+
 To run the backend service:
-```bash
-uvicorn main:app --reload
-```
+   ```bash
+   uvicorn main:app --reload
+   ```
 
 ### Frontend
 To start the frontend:
-```bash
-npm start
-```
+   ```bash
+   npm start
+   ```
+
+## Adding new documents to the library
+
+To add new documents, stop the backend service, copy the files into the backend/documents folder, then run
+   ```bash
+   rm -rf faiss_index
+   uvicorn main:app --reload
+   ```
 
