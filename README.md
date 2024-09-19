@@ -1,7 +1,7 @@
 # XENGPT
 
 ## Description
-Provide a brief description of your project and its purpose.
+A custom Chatbot using OpenAI embeds and chat to allow you to chat with your documents
 
 ## Project Structure
 - `backend/`: Contains Python scripts for data processing and the FAISS index.

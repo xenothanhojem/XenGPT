@@ -18,3 +18,5 @@ backend/faiss_index/
 
 # Environment files (if any)
 .env
+
+.DS_Store
