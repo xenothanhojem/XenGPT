@@ -1,0 +1,20 @@
+# Python cache files
+backend/__pycache__/
+
+backend/documents/*
+
+venv/
+
+# Node modules
+chatbot-frontend/node_modules/
+
+# FAISS index (if this is a generated file)
+backend/faiss_index/
+
+# Package build artifacts
+**/dist/
+**/build/
+**/*.map
+
+# Environment files (if any)
+.env
